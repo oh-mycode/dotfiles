@@ -10,11 +10,11 @@
 
 
 - link:
-  ~/.gitconfig: .gitconfig
-  ~/.editorconfig: .editorconfig
-  ~/.config/fish/config.fish: fish/config.fish
-  ~/.config/omf: fish/omf
-  ~/.config/nvim: nvim
+    ~/.gitconfig: .gitconfig
+    ~/.editorconfig: .editorconfig
+    ~/.config/fish/config.fish: fish/config.fish
+    ~/.config/omf: fish/omf
+    ~/.config/nvim: nvim
 
 
 - shell:
