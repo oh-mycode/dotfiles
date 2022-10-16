@@ -19,4 +19,6 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+  - curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install > /tmp/omf-install && chmod +x /tmp/omf-install
+  - fish /tmp/omf-install --noninteractive && rm /tmp/omf-install
 
