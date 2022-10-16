@@ -1,0 +1,22 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+
+- create:
+    - ~/.vim/undo-history
+
+
+- link:
+  ~/.gitconfig: .gitconfig
+  ~/.editorconfig: .editorconfig
+  ~/.config/fish/config.fish: fish/config.fish
+  ~/.config/omf: fish/omf
+  ~/.config/nvim: nvim
+
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+

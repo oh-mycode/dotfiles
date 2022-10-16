@@ -1,0 +1,14 @@
+[user]
+	name = Alexey Fedorov
+	email = ac.fedorov@gmail.com
+[credential]
+	helper = osxkeychain
+[core]
+	autocrlf = input
+	safecrlf = true
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+
