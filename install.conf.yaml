@@ -6,7 +6,7 @@
 
 
 - create:
-    - ~/.vim/undo-history
+    - ~/.vim/undodir
 
 
 - link:
