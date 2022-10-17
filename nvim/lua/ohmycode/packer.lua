@@ -2,9 +2,12 @@ return require("packer").startup(function()
     use("wbthomason/packer.nvim")
     use("sbdchd/neoformat")
 
-    use("/usr/local/opt/fzf")
-    use("junegunn/fzf.vim")
+    -- use("/usr/local/opt/fzf")
+    -- use("junegunn/fzf.vim")
 
+    use("nvim-treesitter/nvim-treesitter", {
+        run = ":TSUpdate"
+    })
     use("nvim-lua/plenary.nvim")
     use("nvim-lua/popup.nvim")
     use("nvim-telescope/telescope.nvim")
