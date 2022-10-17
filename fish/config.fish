@@ -11,6 +11,7 @@ if type -q exa
 end
 
 set -gx EDITOR nvim
+set PATH /Users/aleksey/.nvm/versions/node/v12.18.0/bin $PATH
 
 
 if status is-interactive
