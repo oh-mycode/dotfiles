@@ -74,6 +74,16 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["Comment.nvim"] = {
+    loaded = true,
+    path = "/Users/aleksey/.local/share/nvim/site/pack/packer/start/Comment.nvim",
+    url = "https://github.com/numToStr/Comment.nvim"
+  },
+  LuaSnip = {
+    loaded = true,
+    path = "/Users/aleksey/.local/share/nvim/site/pack/packer/start/LuaSnip",
+    url = "https://github.com/L3MON4D3/LuaSnip"
+  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/Users/aleksey/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
@@ -89,10 +99,30 @@ _G.packer_plugins = {
     path = "/Users/aleksey/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  ["cmp-path"] = {
+    loaded = true,
+    path = "/Users/aleksey/.local/share/nvim/site/pack/packer/start/cmp-path",
+    url = "https://github.com/hrsh7th/cmp-path"
+  },
+  cmp_luasnip = {
+    loaded = true,
+    path = "/Users/aleksey/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
+    url = "https://github.com/saadparwaiz1/cmp_luasnip"
+  },
   ["diffview.nvim"] = {
     loaded = true,
     path = "/Users/aleksey/.local/share/nvim/site/pack/packer/start/diffview.nvim",
     url = "https://github.com/sindrets/diffview.nvim"
+  },
+  ["friendly-snippets"] = {
+    loaded = true,
+    path = "/Users/aleksey/.local/share/nvim/site/pack/packer/start/friendly-snippets",
+    url = "https://github.com/rafamadriz/friendly-snippets"
+  },
+  ["gitsigns.nvim"] = {
+    loaded = true,
+    path = "/Users/aleksey/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
   },
   gruvbox = {
     loaded = true,
@@ -114,6 +144,21 @@ _G.packer_plugins = {
     path = "/Users/aleksey/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  ["mason-lspconfig.nvim"] = {
+    loaded = true,
+    path = "/Users/aleksey/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
+    url = "https://github.com/williamboman/mason-lspconfig.nvim"
+  },
+  ["mason-null-ls.nvim"] = {
+    loaded = true,
+    path = "/Users/aleksey/.local/share/nvim/site/pack/packer/start/mason-null-ls.nvim",
+    url = "https://github.com/jayp0521/mason-null-ls.nvim"
+  },
+  ["mason.nvim"] = {
+    loaded = true,
+    path = "/Users/aleksey/.local/share/nvim/site/pack/packer/start/mason.nvim",
+    url = "https://github.com/williamboman/mason.nvim"
+  },
   neoformat = {
     loaded = true,
     path = "/Users/aleksey/.local/share/nvim/site/pack/packer/start/neoformat",
@@ -123,6 +168,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/aleksey/.local/share/nvim/site/pack/packer/start/neogit",
     url = "https://github.com/TimUntersberger/neogit"
+  },
+  ["null-ls.nvim"] = {
+    loaded = true,
+    path = "/Users/aleksey/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
+    url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
   },
   ["nvim-autopairs"] = {
     loaded = true,
@@ -189,6 +239,11 @@ _G.packer_plugins = {
     path = "/Users/aleksey/.local/share/nvim/site/pack/packer/start/symbols-outline.nvim",
     url = "https://github.com/simrat39/symbols-outline.nvim"
   },
+  ["telescope-fzf-native.nvim"] = {
+    loaded = true,
+    path = "/Users/aleksey/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
+    url = "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/aleksey/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -198,11 +253,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/aleksey/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
-  },
-  ["vim-commentary"] = {
-    loaded = true,
-    path = "/Users/aleksey/.local/share/nvim/site/pack/packer/start/vim-commentary",
-    url = "https://github.com/tpope/vim-commentary"
   }
 }
 
