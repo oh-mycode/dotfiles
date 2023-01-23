@@ -114,6 +114,11 @@ _G.packer_plugins = {
     path = "/Users/aleksey/.local/share/nvim/site/pack/packer/start/diffview.nvim",
     url = "https://github.com/sindrets/diffview.nvim"
   },
+  ["editorconfig-vim"] = {
+    loaded = true,
+    path = "/Users/aleksey/.local/share/nvim/site/pack/packer/start/editorconfig-vim",
+    url = "https://github.com/editorconfig/editorconfig-vim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/Users/aleksey/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -128,6 +133,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/aleksey/.local/share/nvim/site/pack/packer/start/gruvbox",
     url = "https://github.com/gruvbox-community/gruvbox"
+  },
+  ["hop.nvim"] = {
+    loaded = true,
+    path = "/Users/aleksey/.local/share/nvim/site/pack/packer/start/hop.nvim",
+    url = "https://github.com/phaazon/hop.nvim"
+  },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/Users/aleksey/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
   ["lspkind-nvim"] = {
     loaded = true,
@@ -169,6 +184,11 @@ _G.packer_plugins = {
     path = "/Users/aleksey/.local/share/nvim/site/pack/packer/start/neogit",
     url = "https://github.com/TimUntersberger/neogit"
   },
+  ["nightfox.nvim"] = {
+    loaded = true,
+    path = "/Users/aleksey/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
+    url = "https://github.com/EdenEast/nightfox.nvim"
+  },
   ["null-ls.nvim"] = {
     loaded = true,
     path = "/Users/aleksey/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
@@ -204,6 +224,16 @@ _G.packer_plugins = {
     path = "/Users/aleksey/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-navic"] = {
+    loaded = true,
+    path = "/Users/aleksey/.local/share/nvim/site/pack/packer/start/nvim-navic",
+    url = "https://github.com/SmiteshP/nvim-navic"
+  },
+  ["nvim-spectre"] = {
+    loaded = true,
+    path = "/Users/aleksey/.local/share/nvim/site/pack/packer/start/nvim-spectre",
+    url = "https://github.com/windwp/nvim-spectre"
+  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/Users/aleksey/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
@@ -218,6 +248,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/aleksey/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
+  },
+  ["onedark.nvim"] = {
+    loaded = true,
+    path = "/Users/aleksey/.local/share/nvim/site/pack/packer/start/onedark.nvim",
+    url = "https://github.com/navarasu/onedark.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -248,6 +283,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/aleksey/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["tokyodark.nvim"] = {
+    loaded = true,
+    path = "/Users/aleksey/.local/share/nvim/site/pack/packer/start/tokyodark.nvim",
+    url = "https://github.com/tiagovla/tokyodark.nvim"
   },
   undotree = {
     loaded = true,

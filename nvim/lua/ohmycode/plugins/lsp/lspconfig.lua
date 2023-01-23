@@ -8,9 +8,15 @@ if not cmp_nvim_lsp_status then
     return
 end
 
+local navic = require("nvim-navic")
+
 local keymap = vim.keymap
 
 local on_attach = function(client, bufnr)
+    if client.server_capabilities.documentSymbolProvider then
+        navic.attach(client, bufnr)
+    end
+
 	-- keybind options
 	local opts = { noremap = true, silent = true, buffer = bufnr }
 
@@ -47,6 +53,8 @@ for type, icon in pairs(signs) do
     vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 end
 
+require("symbols-outline").setup()
+
 -- configure lua server (with special settings)
 lspconfig["sumneko_lua"].setup({
     capabilities = capabilities,
@@ -67,3 +75,8 @@ lspconfig["sumneko_lua"].setup({
         },
     },
 })
+lspconfig['pyright'].setup{
+    capabilities = capabilities,
+    on_attach = on_attach,
+    -- flags = lsp_flags,
+}

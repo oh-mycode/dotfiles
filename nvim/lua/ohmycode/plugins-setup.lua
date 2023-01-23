@@ -32,6 +32,9 @@ return packer.startup(function(use)
 
     -- Colorscheme section
     use "gruvbox-community/gruvbox"
+    use "navarasu/onedark.nvim"
+    use "tiagovla/tokyodark.nvim"
+    use "EdenEast/nightfox.nvim"
 
     -- use "/usr/local/opt/fzf"
     -- use "junegunn/fzf.vim"
@@ -56,6 +59,7 @@ return packer.startup(function(use)
     use "glepnir/lspsaga.nvim"
     use "onsails/lspkind-nvim"
     use "simrat39/symbols-outline.nvim"
+    use "SmiteshP/nvim-navic"
 
     -- managing & installing lsp servers, linters & formatters
 	use "williamboman/mason.nvim"
@@ -92,14 +96,21 @@ return packer.startup(function(use)
         requires = { "kyazdani42/nvim-web-devicons", opt = true }
     }
     use {
-        "akinsho/bufferline.nvim",
-        tag = "v2.*",
-        requires = "kyazdani42/nvim-web-devicons"
+        'akinsho/bufferline.nvim',
+        tag = "v3.*",
+        requires = 'nvim-tree/nvim-web-devicons'
     }
+    use "lukas-reineke/indent-blankline.nvim"
 
+    use "windwp/nvim-spectre" -- brew install gnu-sed
     use "numToStr/Comment.nvim"
     use "windwp/nvim-autopairs"
     use "mbbill/undotree"
+    use {
+        "phaazon/hop.nvim",
+        branch = "v2", -- optional but strongly recommended
+    }
+    use "editorconfig/editorconfig-vim"
 
     if packer_bootstrap then
         require("packer").sync()

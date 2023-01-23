@@ -42,3 +42,9 @@ opt.shortmess:append("c")
 
 opt.colorcolumn = "80,100"
 
+opt.list = false
+opt.listchars:append "space:⋅"
+opt.listchars:append "tab:>>"
+opt.listchars:append "eol:↴"
+
+vim.o.winbar = "%{%v:lua.require'nvim-navic'.get_location()%}"

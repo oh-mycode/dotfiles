@@ -4,6 +4,8 @@ local keymap = vim.keymap
 
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 
+keymap.set("n", "<leader><tab><tab>", ":set invlist<CR>")
+
 -- greatest remap ever
 keymap.set("n", "x", '"_x')
 keymap.set("v", "<leader>p", "\"_dP")
