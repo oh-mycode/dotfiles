@@ -27,92 +27,92 @@ if not status then
 end
 
 return packer.startup(function(use)
-    use "wbthomason/packer.nvim"
-    use "sbdchd/neoformat"
+	use("wbthomason/packer.nvim")
+	use("sbdchd/neoformat")
 
-    -- Colorscheme section
-    use "gruvbox-community/gruvbox"
-    use "navarasu/onedark.nvim"
-    use "tiagovla/tokyodark.nvim"
-    use "EdenEast/nightfox.nvim"
+	-- Colorscheme section
+	use("gruvbox-community/gruvbox")
+	use("navarasu/onedark.nvim")
+	use("tiagovla/tokyodark.nvim")
+	use("EdenEast/nightfox.nvim")
 
-    -- use "/usr/local/opt/fzf"
-    -- use "junegunn/fzf.vim"
+	-- use "/usr/local/opt/fzf"
+	-- use "junegunn/fzf.vim"
 
-    use "nvim-lua/plenary.nvim"
-    use "nvim-lua/popup.nvim"
+	use("nvim-lua/plenary.nvim")
+	use("nvim-lua/popup.nvim")
 
-    -- treesitter configuration
-    use { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }
+	-- treesitter configuration
+	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
 
-    use { "nvim-telescope/telescope-fzf-native.nvim", run = "make" }
-    use "nvim-telescope/telescope.nvim"
+	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
+	use("nvim-telescope/telescope.nvim")
 
-    -- autocompletion
-    use "hrsh7th/nvim-cmp"
-    use "hrsh7th/cmp-buffer"
-    use "hrsh7th/cmp-path"
+	-- autocompletion
+	use("hrsh7th/nvim-cmp")
+	use("hrsh7th/cmp-buffer")
+	use("hrsh7th/cmp-path")
 
-    -- configuring lsp servers
-    use "neovim/nvim-lspconfig"
-    use "hrsh7th/cmp-nvim-lsp"
-    use "glepnir/lspsaga.nvim"
-    use "onsails/lspkind-nvim"
-    use "simrat39/symbols-outline.nvim"
-    use "SmiteshP/nvim-navic"
+	-- configuring lsp servers
+	use("neovim/nvim-lspconfig")
+	use("hrsh7th/cmp-nvim-lsp")
+	use("glepnir/lspsaga.nvim")
+	use("onsails/lspkind-nvim")
+	use("simrat39/symbols-outline.nvim")
+	use("SmiteshP/nvim-navic")
 
-    -- managing & installing lsp servers, linters & formatters
-	use "williamboman/mason.nvim"
-	use "williamboman/mason-lspconfig.nvim"
+	-- managing & installing lsp servers, linters & formatters
+	use("williamboman/mason.nvim")
+	use("williamboman/mason-lspconfig.nvim")
 
-    -- formatting & linting
-	use "jose-elias-alvarez/null-ls.nvim" -- configure formatters & linters
-	use "jayp0521/mason-null-ls.nvim" -- bridges gap b/w mason & null-ls
+	-- formatting & linting
+	use("jose-elias-alvarez/null-ls.nvim") -- configure formatters & linters
+	use("jayp0521/mason-null-ls.nvim") -- bridges gap b/w mason & null-ls
 
-    -- snippets
-    use "L3MON4D3/LuaSnip"
-    use "saadparwaiz1/cmp_luasnip"
-    use "rafamadriz/friendly-snippets"
+	-- snippets
+	use("L3MON4D3/LuaSnip")
+	use("saadparwaiz1/cmp_luasnip")
+	use("rafamadriz/friendly-snippets")
 
-    -- git integration
-	use "lewis6991/gitsigns.nvim"
-    use "TimUntersberger/neogit"
-    use {"sindrets/diffview.nvim", requires = "nvim-lua/plenary.nvim"}
+	-- git integration
+	use("lewis6991/gitsigns.nvim")
+	use("TimUntersberger/neogit")
+	use({ "sindrets/diffview.nvim", requires = "nvim-lua/plenary.nvim" })
 
-    -- DAP
-    use "mfussenegger/nvim-dap"
-    use "rcarriga/nvim-dap-ui"
-    use "theHamsta/nvim-dap-virtual-text"
+	-- DAP
+	use("mfussenegger/nvim-dap")
+	use("rcarriga/nvim-dap-ui")
+	use("theHamsta/nvim-dap-virtual-text")
 
-    use {
-        "nvim-tree/nvim-tree.lua",
-        requires = {
-            "nvim-tree/nvim-web-devicons", -- optional, for file icons
-        },
-        tag = "nightly" -- optional, updated every week. (see issue #1193)
-    }
-    use {
-        "nvim-lualine/lualine.nvim",
-        requires = { "kyazdani42/nvim-web-devicons", opt = true }
-    }
-    use {
-        'akinsho/bufferline.nvim',
-        tag = "v3.*",
-        requires = 'nvim-tree/nvim-web-devicons'
-    }
-    use "lukas-reineke/indent-blankline.nvim"
+	use({
+		"nvim-tree/nvim-tree.lua",
+		requires = {
+			"nvim-tree/nvim-web-devicons", -- optional, for file icons
+		},
+		tag = "nightly", -- optional, updated every week. (see issue #1193)
+	})
+	use({
+		"nvim-lualine/lualine.nvim",
+		requires = { "kyazdani42/nvim-web-devicons", opt = true },
+	})
+	use({
+		"akinsho/bufferline.nvim",
+		tag = "v3.*",
+		requires = "nvim-tree/nvim-web-devicons",
+	})
+	use("lukas-reineke/indent-blankline.nvim")
 
-    use "windwp/nvim-spectre" -- brew install gnu-sed
-    use "numToStr/Comment.nvim"
-    use "windwp/nvim-autopairs"
-    use "mbbill/undotree"
-    use {
-        "phaazon/hop.nvim",
-        branch = "v2", -- optional but strongly recommended
-    }
-    use "editorconfig/editorconfig-vim"
+	use("windwp/nvim-spectre") -- brew install gnu-sed
+	use("numToStr/Comment.nvim")
+	use("windwp/nvim-autopairs")
+	use("mbbill/undotree")
+	use({
+		"phaazon/hop.nvim",
+		branch = "v2", -- optional but strongly recommended
+	})
+	use("editorconfig/editorconfig-vim")
 
-    if packer_bootstrap then
-        require("packer").sync()
-    end
+	if packer_bootstrap then
+		require("packer").sync()
+	end
 end)

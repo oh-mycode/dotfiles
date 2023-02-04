@@ -21,7 +21,7 @@ opt.backup = false
 opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 opt.undofile = true
 
-opt.hlsearch = true
+opt.hlsearch = false
 opt.incsearch = true
 
 opt.termguicolors = true
@@ -43,8 +43,8 @@ opt.shortmess:append("c")
 opt.colorcolumn = "80,100"
 
 opt.list = false
-opt.listchars:append "space:⋅"
-opt.listchars:append "tab:>>"
-opt.listchars:append "eol:↴"
+opt.listchars:append("space:⋅")
+opt.listchars:append("tab:>>")
+opt.listchars:append("eol:↴")
 
 vim.o.winbar = "%{%v:lua.require'nvim-navic'.get_location()%}"

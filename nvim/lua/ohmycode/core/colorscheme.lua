@@ -1,7 +1,7 @@
-require('onedark').setup {
-    style = 'dark'
-}
-require('onedark').load()
+require("onedark").setup({
+	style = "dark",
+})
+require("onedark").load()
 
 -- vim.g.tokyodark_transparent_background = false
 -- vim.g.tokyodark_enable_italic_comment = true
