@@ -1,0 +1,4 @@
+git:
+  paging:
+    colorArg: never
+    useConfig: true
