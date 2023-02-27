@@ -12,6 +12,8 @@ if type -q exa
   alias lla "ll -a"
 end
 
+alias lg "lazygit"
+
 set -gx EDITOR nvim
 set PATH /Users/aleksey/.nvm/versions/node/v12.18.0/bin $PATH
 set PATH /Users/aleksey/.local/bin $PATH
