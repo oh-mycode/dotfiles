@@ -1,0 +1,73 @@
+# https://github.com/alacritty/alacritty/blob/master/alacritty.yml
+
+# https://github.com/alacritty/alacritty-theme
+import:
+ - ~/.config/alacritty/themes/themes/one_dark.yaml
+ # - ~/.config/alacritty/themes/themes/gruvbox_dark.yaml
+
+env:
+  # TERM variable
+  #
+  # This value is used to set the `$TERM` environment variable for
+  # each instance of Alacritty. If it is not present, alacritty will
+  # check the local terminfo database and use `alacritty` if it is
+  # available, otherwise `xterm-256color` is used.
+  # TERM: alacritty
+  TERM: xterm-256color
+
+selection:
+  save_to_clipboard: true
+  text: CellBackground
+
+window:
+  opacity: 1.0
+  dimensions:
+    columns: 130
+    lines: 47 
+  padding:
+    x: 0
+    y: 0
+  decorations: none
+  startup_mode: Windowed
+  dynamic_title: true
+
+key_bindings:
+- { key: F10, action: ToggleMaximized }
+- { key: F11, action: ToggleFullscreen }
+
+font:
+  normal:
+    family: MesloLGS NF
+    style: Regular
+
+  bold:
+    family: MesloLGS NF
+    style: Bold
+
+  italic:
+    family: MesloLGS NF
+    style: Italic
+
+  bold_italic:
+    family: MesloLGS NF
+    style: Bold Italic
+
+  size: 14.0
+
+shell:
+  program: /usr/local/bin/zsh
+  args:
+  - --login
+
+scrolling:
+  history: 10000
+  multiplier: 3
+
+mouse:
+  hide_when_typing: true
+
+cursor:
+  style:
+    shape: Block
+  vi_mode_style:
+    shape: Beam
