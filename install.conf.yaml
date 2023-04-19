@@ -7,17 +7,19 @@
 
 - create:
     - ~/.vim/undodir
-
+    - ~/.config/wezterm
 
 - link:
     ~/.gitconfig: .gitconfig
     ~/.editorconfig: .editorconfig
     ~/.config/alacritty/alacritty.yml: alacritty.yml
+    ~/.config/wezterm/wezterm.lua: wezterm.lua
     ~/.config/fish/config.fish: fish/config.fish
     ~/.config/omf: fish/omf
     ~/.p10k.zsh: zsh/.p10k.zsh
+    ~/z.sh: zsh/z.sh
     ~/.zshrc: zsh/.zshrc
-    ~/.config/nvim: nvim
+    # ~/.config/nvim: nvim
     ~/.tmux.conf: .tmux.conf
     ~/Library/Application Support/lazygit/config.yml: lazygit/config.yaml
 
