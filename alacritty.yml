@@ -37,19 +37,20 @@ key_bindings:
 
 font:
   normal:
-    family: MesloLGS NF
+    family: Hack Nerd Font
+    # family: MesloLGS NF
     style: Regular
 
   bold:
-    family: MesloLGS NF
+    family: Hack Nerd Font
     style: Bold
 
   italic:
-    family: MesloLGS NF
+    family: Hack Nerd Font
     style: Italic
 
   bold_italic:
-    family: MesloLGS NF
+    family: Hack Nerd Font
     style: Bold Italic
 
   size: 14.0
