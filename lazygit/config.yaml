@@ -1,4 +1,6 @@
 git:
   paging:
-    colorArg: never
-    useConfig: true
+    # colorArg: never
+    # useConfig: true
+    colorArg: always
+    pager: delta --side-by-side --dark --paging=never
