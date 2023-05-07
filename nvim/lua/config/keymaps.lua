@@ -7,3 +7,10 @@ vim.keymap.set("n", "<leader>cL", ":set invlist<CR>", { desc = "Show list symbol
 -- greatest remap ever
 vim.keymap.set("n", "x", '"_x', { desc = "Remove symbol without copying" })
 vim.keymap.set("v", "<leader>p", '"_dP', { desc = "Paste without copying" })
+
+vim.keymap.set(
+  "n",
+  "<leader>cp",
+  ":let @*=fnamemodify(expand('%'), ':~:.') . ':' . line('.')<cr>",
+  { noremap = true, silent = true, desc = "Copy Path with line number" }
+)
