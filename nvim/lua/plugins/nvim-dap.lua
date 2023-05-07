@@ -3,35 +3,35 @@ return {
     "mfussenegger/nvim-dap",
     keys = {
       {
-        "<leader>cdb",
+        "<leader>cDb",
         function()
           require("dap").toggle_breakpoint()
         end,
         desc = "Toggle Breakpoint",
       },
       {
-        "<leader>cdr",
+        "<leader>cDr",
         function()
           require("dap").continue()
         end,
         desc = "Continue",
       },
       {
-        "<leader>cdo",
+        "<leader>cDo",
         function()
           require("dap").step_over()
         end,
         desc = "Step Over",
       },
       {
-        "<leader>cdi",
+        "<leader>cDi",
         function()
           require("dap").step_into()
         end,
         desc = "Step Into",
       },
       {
-        "<leader>cdu",
+        "<leader>cDu",
         function()
           require("dap").step_out()
         end,
