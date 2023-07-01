@@ -121,6 +121,8 @@ bindkey '^[[B' history-substring-search-down
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 . ~/z.sh
 
+# eval "$(starship init zsh)"
+
 # exa alialses
 alias ls="ls -p -G"
 alias la="ls -A"

@@ -14,7 +14,8 @@ end
 
 -- For example, changing the color scheme:
 -- config.color_scheme = "AdventureTime"
-config.font = wezterm.font("Hack Nerd Font")
+-- config.font = wezterm.font("Hack Nerd Font")
+config.font = wezterm.font("MesloLGS NF")
 -- config.font = wezterm.font("Mononoki Nerd Font")
 config.font_size = 14
 config.window_background_opacity = 1
