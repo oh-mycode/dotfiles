@@ -2,8 +2,8 @@
 
 # https://github.com/alacritty/alacritty-theme
 import:
- - ~/.config/alacritty/themes/themes/one_dark.yaml
- # - ~/.config/alacritty/themes/themes/gruvbox_dark.yaml
+  - ~/.config/alacritty/themes/themes/catppuccin.yaml
+  # - ~/.config/alacritty/themes/themes/gruvbox_dark.yaml
 
 env:
   # TERM variable
@@ -23,7 +23,7 @@ window:
   opacity: 1.0
   dimensions:
     columns: 130
-    lines: 47 
+    lines: 47
   padding:
     x: 0
     y: 0
@@ -32,25 +32,28 @@ window:
   dynamic_title: true
 
 key_bindings:
-- { key: F10, action: ToggleMaximized }
-- { key: F11, action: ToggleFullscreen }
+  - { key: F10, action: ToggleMaximized }
+  - { key: F11, action: ToggleFullscreen }
 
 font:
   normal:
     family: Hack Nerd Font
-    # family: MesloLGS NF
+    # family: JetBrainsMono Nerd Font
     style: Regular
 
   bold:
     family: Hack Nerd Font
+    # family: MesloLGS NF
     style: Bold
 
   italic:
     family: Hack Nerd Font
+    # family: MesloLGS NF
     style: Italic
 
   bold_italic:
     family: Hack Nerd Font
+    # family: MesloLGS NF
     style: Bold Italic
 
   size: 14.0
@@ -58,7 +61,7 @@ font:
 shell:
   program: /usr/local/bin/zsh
   args:
-  - --login
+    - --login
 
 scrolling:
   history: 10000
