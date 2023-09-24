@@ -27,8 +27,15 @@ opt.spell = false
 
 local M = {}
 
-M.ui = { theme = "catppuccin" }
+M.ui = {
+  theme = "catppuccin",
+  statusline = {
+    theme = "vscode_colored",
+  },
+}
 M.plugins = "custom.plugins"
 M.mappings = require "custom.mappings"
+
+-- vim.cmd.colorscheme "catppuccin"
 
 return M

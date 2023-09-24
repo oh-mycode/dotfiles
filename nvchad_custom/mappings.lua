@@ -1,8 +1,14 @@
+local Util = require "custom.utils"
+
 local M = {}
 
 M.disabled = {
   n = {
     ["<C-n>"] = "",
+    ["<C-h>"] = "",
+    ["<C-l>"] = "",
+    ["<C-j>"] = "",
+    ["<C-k>"] = "",
   },
 }
 
@@ -10,6 +16,37 @@ M.nvimtree = {
   plugin = true,
   n = {
     ["<leader>e"] = { "<cmd> NvimTreeToggle<CR>", "Toggle nvimtree" },
+  },
+}
+
+M.gitsigns = {
+  plugin = true,
+
+  n = {
+    ["<leader>ghR"] = {
+      function()
+        require("gitsigns").reset_hunk()
+      end,
+      "Reset hunk",
+    },
+    ["<leader>ghb"] = {
+      function()
+        package.loaded.gitsigns.blame_line()
+      end,
+      "Blame line",
+    },
+    ["<leader>ghd"] = {
+      function()
+        package.loaded.gitsigns.diffthis()
+      end,
+      "Diff This",
+    },
+    ["<leader>ghD"] = {
+      function()
+        package.loaded.gitsigns.diffthis "~"
+      end,
+      "Diff This ~",
+    },
   },
 }
 
@@ -21,6 +58,7 @@ M.general = {
       "Copy Path with line number",
       opts = { noremap = true, silent = true },
     },
+
     -- tabs
     ["<leader><tab>l"] = { "<cmd>tablast<cr>", "Last Tab" },
     ["<leader><tab>f"] = { "<cmd>tabfirst<cr>", "First Tab" },
@@ -28,20 +66,24 @@ M.general = {
     ["<leader><tab>]"] = { "<cmd>tabnext<cr>", "Next Tab" },
     ["<leader><tab>d"] = { "<cmd>tabclose<cr>", "Close Tab" },
     ["<leader><tab>["] = { "<cmd>tabprevious<cr>", "Previous Tab" },
+
+    -- git
+    ["<leader>gg"] = {
+      function()
+        Util.float_term({ "lazygit" }, { cwd = Util.get_root(), esc_esc = false, ctrl_hjkl = false })
+      end,
+      "Lazygit (root dir)",
+    },
+    ["<leader>gG"] = {
+      function()
+        Util.float_term({ "lazygit" }, { esc_esc = false, ctrl_hjkl = false })
+      end,
+      "Lazygit (cwd)",
+    },
   },
 }
 
 M.telescope = require "custom.mappings.telescope"
-
-M.vim_tmux_navigator = {
-  n = {
-    ["<C-h>"] = { ":TmuxNavigateLeft<CR>", "Tmux go left panel", opts = { noremap = true, silent = true } },
-    ["<C-j>"] = { ":TmuxNavigateDown<CR>", "Tmux go down panel", opts = { noremap = true, silent = true } },
-    ["<C-k>"] = { ":TmuxNavigateUp<CR>", "Tmux go up panel", opts = { noremap = true, silent = true } },
-    ["<C-l>"] = { ":TmuxNavigateRight<CR>", "Tmux go right panel", opts = { noremap = true, silent = true } },
-    -- { "<C-p>", ":TmuxNavigatePrevious<CR>", noremap = true, silent = true, desc = "Tmux go previous panel" },
-  },
-}
 
 M.dap_python = {
   plugin = true,

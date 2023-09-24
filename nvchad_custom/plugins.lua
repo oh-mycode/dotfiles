@@ -1,8 +1,18 @@
 local plugins = {
   {
+    "catppuccin/nvim",
+    lazy = false,
+    name = "catppuccin",
+    priority = 1000,
+  },
+  { "NvChad/nvim-colorizer.lua", enabled = false },
+  {
     "sindrets/diffview.nvim",
     dependencies = {
       "nvim-lua/plenary.nvim",
+    },
+    opts = {
+      enhanced_diff_hl = true,
     },
     keys = {
       {
@@ -129,7 +139,12 @@ local plugins = {
   },
   {
     "christoomey/vim-tmux-navigator",
-    lazy = false,
+    keys = {
+      { "<C-h>", ":TmuxNavigateLeft<CR>", noremap = true, silent = true, desc = "Tmux go left panel" },
+      { "<C-j>", ":TmuxNavigateDown<CR>", noremap = true, silent = true, desc = "Tmux go down panel" },
+      { "<C-k>", ":TmuxNavigateUp<CR>", noremap = true, silent = true, desc = "Tmux go up panel" },
+      { "<C-l>", ":TmuxNavigateRight<CR>", noremap = true, silent = true, desc = "Tmux go right panel" },
+    },
   },
   {
     "mbbill/undotree",
