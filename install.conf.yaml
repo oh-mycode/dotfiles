@@ -12,21 +12,21 @@
 - link:
     ~/.gitconfig: .gitconfig
     ~/.editorconfig: .editorconfig
-    ~/.config/alacritty/alacritty.yml: alacritty.yml
+    # ~/.config/alacritty/alacritty.yml: alacritty.yml
     ~/.config/wezterm/wezterm.lua: wezterm.lua
-    ~/.config/fish/config.fish: fish/config.fish
-    ~/.config/omf: fish/omf
-    ~/.p10k.zsh: zsh/.p10k.zsh
+    # ~/.config/fish/config.fish: fish/config.fish
+    # ~/.config/omf: fish/omf
+    # ~/.p10k.zsh: zsh/.p10k.zsh
     ~/z.sh: zsh/z.sh
-    ~/.zshrc: zsh/.zshrc
-    ~/.config/nvim/lua/custom: nvchad_custom
-    ~/.tmux.conf: .tmux.conf
+    ~/.zshrc: zsh/zshrc
+    # ~/.config/nvim/lua/custom: nvchad_custom
+    ~/.tmux.conf: tmux.conf
     ~/Library/Application Support/lazygit/config.yml: lazygit/config.yaml
 
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
   - [./install-brew.sh, Installing homebew and essential utils]
-  - curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install > /tmp/omf-install && chmod +x /tmp/omf-install
-  - fish /tmp/omf-install --noninteractive && rm /tmp/omf-install
+  # - curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install > /tmp/omf-install && chmod +x /tmp/omf-install
+  # - fish /tmp/omf-install --noninteractive && rm /tmp/omf-install
 
