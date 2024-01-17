@@ -19,9 +19,10 @@
     # ~/.p10k.zsh: zsh/.p10k.zsh
     ~/z.sh: zsh/z.sh
     ~/.zshrc: zsh/zshrc
+    ~/.config/nvim: LazyVim
     # ~/.config/nvim/lua/custom: nvchad_custom
     ~/.tmux.conf: tmux.conf
-    ~/Library/Application Support/lazygit/config.yml: lazygit/config.yaml
+    # ~/Library/Application Support/lazygit/config.yml: lazygit/config.yaml
 
 
 - shell:
