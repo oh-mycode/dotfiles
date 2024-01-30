@@ -79,14 +79,15 @@ ZSH_THEME="agnoster"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-    macos
-    docker
+    # macos
+    # docker
     git
     svn
-    zsh-autosuggestions
-    zsh-syntax-highlighting
-    zsh-completions
-    zsh-history-substring-search
+  poetry
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+  zsh-completions
+  zsh-history-substring-search
 )
 
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
@@ -134,35 +135,41 @@ alias lla="ll -A"
 alias lg="lazygit"
 
 if type "exa" > /dev/null; then
-  alias ll="exa -l -g --icons"
-  alias lla="ll -a"
+alias ll="exa -l -g --icons"
+alias lla="ll -a"
 fi
 
 prompt_svn() {
-    local rev branch
-    if in_svn; then
-        rev=$(svn_get_rev_nr)
-        branch=$(svn_get_branch_name)
-        if [[ $(svn_dirty_choose_pwd 1 0) -eq 1 ]]; then
-            prompt_segment yellow black
-            echo -n "$rev@$branch"
-            echo -n "±"
-        else
-            prompt_segment green black
-            echo -n "$rev@$branch"
-        fi
-    fi
+  local rev branch
+  if in_svn; then
+      rev=$(svn_get_rev_nr)
+      branch=$(svn_get_branch_name)
+      if [[ $(svn_dirty_choose_pwd 1 0) -eq 1 ]]; then
+          prompt_segment yellow black
+          echo -n "$rev@$branch"
+          echo -n "±"
+      else
+          prompt_segment green black
+          echo -n "$rev@$branch"
+      fi
+  fi
 }
 
 build_prompt() {
-    RETVAL=$?
-    prompt_status
-    # prompt_context
-    prompt_dir
-    prompt_git
-    prompt_svn
-    prompt_end
+  RETVAL=$?
+  prompt_status
+  # prompt_context
+  prompt_dir
+  prompt_git
+  prompt_svn
+  prompt_end
 }
+
+export PYTHONPATH=$PYTHONPATH:/home/mbuser/src/
+export SETUPTOOLS_USE_DISTUTILS=stdlib
+# source /home/mbuser/src/Tools/svn-completion.sh
+# complete -A hostname deploy.sh
+# complete -A hostname connect
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
