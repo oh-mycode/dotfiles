@@ -119,7 +119,7 @@ bindkey '^[[B' history-substring-search-down
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-. ~/z.sh
+# . ~/z.sh
 
 # eval "$(starship init zsh)"
 
@@ -131,10 +131,12 @@ alias lla="ll -A"
 
 alias lg="lazygit"
 
-if type "exa" > /dev/null; then
-  alias ll="exa -l -g --icons"
+if type "eza" > /dev/null; then
+  alias ll="eza -l -g --icons"
   alias lla="ll -a"
 fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+eval "$(zoxide init --cmd cd zsh)"
