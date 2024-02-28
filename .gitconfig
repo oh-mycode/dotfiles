@@ -2,8 +2,8 @@
 	name = Alexey Trivasser
 	email = trivasser@gmail.com
 
-[credential]
-	helper = osxkeychain
+; [credential]
+; 	helper = osxkeychain
 
 [core]
 	autocrlf = input
