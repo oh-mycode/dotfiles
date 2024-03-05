@@ -134,6 +134,8 @@ alias lla="ll -A"
 
 alias lg="lazygit"
 
+alias vim="nvim"
+
 if type "eza" > /dev/null; then
 alias ll="eza -l -g --icons"
 alias lla="ll -a"
@@ -165,7 +167,7 @@ build_prompt() {
   prompt_end
 }
 
-alias fa="svn status | awk \"/\.py\$/ {print \$2}\" | xargs -d \"\n\" flake8"
+alias fa='svn status | awk "/\.py\$/ {print \$2}" | xargs -d "\n" flake8'
 
 export PYTHONPATH=$PYTHONPATH:/home/mbuser/src/
 export SETUPTOOLS_USE_DISTUTILS=stdlib
