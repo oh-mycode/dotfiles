@@ -8,11 +8,12 @@
 - create:
     - ~/.vim/undodir
     - ~/.config/wezterm
+    - ~/.config/alacritty
 
 - link:
     ~/.gitconfig: .gitconfig
     ~/.editorconfig: .editorconfig
-    # ~/.config/alacritty/alacritty.yml: alacritty.yml
+    ~/.config/alacritty/alacritty.toml: alacritty.toml
     ~/.config/wezterm/wezterm.lua: wezterm.lua
     # ~/.config/fish/config.fish: fish/config.fish
     # ~/.config/omf: fish/omf
