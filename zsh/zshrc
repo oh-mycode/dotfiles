@@ -167,7 +167,7 @@ build_prompt() {
   prompt_end
 }
 
-alias fa='svn status | awk "/\.py\$/ {print \$2}" | xargs -d "\n" flake8'
+alias fa='svn status | awk '"'"'{print $NF}'"'"' | grep ".py" | xargs -d "\n" flake8'
 
 export PYTHONPATH=$PYTHONPATH:/home/mbuser/src/
 export SETUPTOOLS_USE_DISTUTILS=stdlib
@@ -185,3 +185,4 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+export PATH=$HOME/.local/bin:$PATH
