@@ -178,7 +178,7 @@ build_prompt() {
   prompt_end
 }
 
-alias fa='svn status | awk '"'"'{print $NF}'"'"' | grep ".py" | xargs -d "\n" flake8'
+alias fa='svn status | grep "^[^D].*\.py" | awk '"'"'{print $NF}'"'"' | xargs -d "\n" flake8'
 
 export PYTHONPATH=$PYTHONPATH:/home/mbuser/src/
 export SETUPTOOLS_USE_DISTUTILS=stdlib

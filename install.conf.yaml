@@ -18,7 +18,6 @@
     # ~/.config/fish/config.fish: fish/config.fish
     # ~/.config/omf: fish/omf
     # ~/.p10k.zsh: zsh/.p10k.zsh
-    ~/z.sh: zsh/z.sh
     ~/.zshrc: zsh/zshrc
     ~/.config/nvim: LazyVim
     # ~/.config/nvim/lua/custom: nvchad_custom
@@ -28,7 +27,7 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
-  - [./install-brew.sh, Installing homebew and essential utils]
+  # - [./install-brew.sh, Installing homebew and essential utils]
   # - curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install > /tmp/omf-install && chmod +x /tmp/omf-install
   # - fish /tmp/omf-install --noninteractive && rm /tmp/omf-install
 
