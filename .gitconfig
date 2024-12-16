@@ -1,9 +1,6 @@
 [user]
-	name = Alexey Trivasser
-	email = trivasser@gmail.com
-
-; [credential]
-; 	helper = osxkeychain
+	name = Aleksei trivasser
+	email = aleksei.trivasser@mazebolt.com
 
 [core]
 	autocrlf = input
