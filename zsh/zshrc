@@ -131,9 +131,11 @@ alias lla="ll -A"
 
 alias lg="lazygit"
 
+alias vim="nvim"
+
 if type "eza" > /dev/null; then
-  alias ll="eza -l -g --icons"
-  alias lla="ll -a"
+alias ll="eza -l -g --icons"
+alias lla="ll -a"
 fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.

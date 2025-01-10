@@ -1,0 +1,63 @@
+import = ["/home/mbuser/.config/alacritty/themes/themes/catppuccin-mocha.toml"]
+
+[cursor.style]
+shape = "Block"
+
+[cursor.vi_mode_style]
+shape = "Beam"
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 13.0
+
+[font.bold]
+family = "MesloLGS Nerd Font"
+style = "Bold"
+
+[font.bold_italic]
+family = "MesloLGS Nerd Font"
+style = "Bold Italic"
+
+[font.italic]
+family = "MesloLGS Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "MesloLGS Nerd Font"
+style = "Regular"
+
+[[keyboard.bindings]]
+action = "ToggleMaximized"
+key = "F10"
+
+[[keyboard.bindings]]
+action = "ToggleFullscreen"
+key = "F11"
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[selection]
+save_to_clipboard = true
+# text = "CellBackground"
+
+[shell]
+args = ["--login"]
+program = "/usr/bin/zsh"
+
+[window]
+decorations = "none"
+dynamic_title = true
+opacity = 1.0
+startup_mode = "Windowed"
+
+[window.dimensions]
+columns = 130
+lines = 47
+
+[window.padding]
+x = 0
+y = 0

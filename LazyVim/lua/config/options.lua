@@ -8,3 +8,5 @@ opt.swapfile = false
 opt.backup = false
 opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 opt.undofile = true
+
+vim.g.python3_host_prog = "/home/mbuser/.pyenv/versions/neovim/bin/python3"
