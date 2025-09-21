@@ -20,6 +20,7 @@
     # ~/.p10k.zsh: zsh/.p10k.zsh
     ~/.zshrc: zsh/zshrc
     ~/.config/nvim: LazyVim
+    ~/.config/starship.toml: starship.toml
     # ~/.config/nvim/lua/custom: nvchad_custom
     ~/.tmux.conf: tmux.conf
     # ~/Library/Application Support/lazygit/config.yml: lazygit/config.yaml
